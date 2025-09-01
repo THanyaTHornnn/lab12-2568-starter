@@ -52,7 +52,7 @@ export default function Sidebar({ userName, type = "Admin" }: SidebarComponentPr
         src="pic1.png"
         />
     </Indicator>
-        <Text>User : {userName = "Thanyathorn"} : {type}</Text>
+        <Text>User : {userName} : {type}</Text>
     </Group>
       </Box>
     </Stack>
