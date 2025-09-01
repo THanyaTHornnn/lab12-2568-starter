@@ -12,7 +12,7 @@ interface SidebarComponentProps  {
   userName: string;
   type?: "admin" |"student";
 }
-export type { SidebarProps };
+//export type { SidebarProps };
 export default function Sidebar() {
   return (
     <Stack
@@ -40,10 +40,20 @@ export default function Sidebar() {
         {/* <Text component={RouterNavLink} to="/">
           Test
         </Text> */}
-      </Box>
+      </Box >
       {/* แสดงผู้ใช้งาน */}
+      
       <Box p={10}>
-        <Text>chanadda</Text>
+        <Group gap="sm">
+        <Indicator inline size={16} offset={7} position="bottom-end" color="red" withBorder>
+      <Avatar
+        size="lg"
+        radius="xl"
+        src="pic1.png"
+        />
+    </Indicator>
+        <Text>User : Thanyathorn : Admin</Text>
+    </Group>
       </Box>
     </Stack>
   );

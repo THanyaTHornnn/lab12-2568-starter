@@ -13,6 +13,10 @@ const theme = createTheme({
       dark: "pink",
       light: "cyan",
     }),
+    thanyathorn: virtualColor({
+      name: "thanyathorn",
+      dark: "yellow",
+      light: "grape",}),
   },
 });
 
