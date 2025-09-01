@@ -10,10 +10,10 @@ import {
 } from "@mantine/core";
 interface SidebarComponentProps  {
   userName: string;
-  type?: "admin" |"student";
+  type?: "Admin" |"student";
 }
 //export type { SidebarProps };
-export default function Sidebar() {
+export default function Sidebar({ userName, type = "Admin" }: SidebarComponentProps) {
   return (
     <Stack
       align="stretch"
@@ -52,7 +52,7 @@ export default function Sidebar() {
         src="pic1.png"
         />
     </Indicator>
-        <Text>User : Thanyathorn : Admin</Text>
+        <Text>User : {userName = "Thanyathorn"} : {type}</Text>
     </Group>
       </Box>
     </Stack>
